@@ -22,19 +22,21 @@ Built as the backend layer for a commodities dashboard.
 
 ## Screenshots
 Gold Commodity Live Quote 
-![Gold](frontend/public/gold.png)
+![Gold](frontend/frontend/public/GOLD.png)
 
 Brent Crude Oil Live Quote
-![Brent](frontend/public/brent-crude.png)
+![Brent](frontend/frontend/public/BRENT.png)
 
 List of Tracked Commodities
-![List](frontend/public/list-a.png)
-![List](frontend/public/list-2.png)
+![List](frontend/frontend/public/LIST.png)
+
 
 ## Getting Started
 1. Get your FMP API KEY and set it up in your application.properties (always have the actual key in an .env file)
 2. Run the app via: ./mvnw spring-boot:run
-3. Test the endpoint on Postman/Insomnia
+3. (Optional) Test the endpoint on Postman/Insomnia
+4. Build the frontend. Initialize a react project with vite via this command: npm create vite@latest frontend -- --template react
+5. To run and see the dashboard: npm run dev then go to [http://localhost:5173/]
 
 ## Endpoints to Test:
 1. Get a list of tracked commodities: GET http://localhost:8080/quote/list
